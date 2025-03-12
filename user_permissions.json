@@ -1,0 +1,30 @@
+{
+    "users": {
+      "vans@think.digital": {
+        "role": "admin",
+        "dashboards": [], 
+        "pages": ["/", "/analytics", "/client-view", "/management"]
+      },
+      "appuser@ethink.digital": {
+        "role": "user",
+        "dashboards": ["4789f9b1-e2d9-4614-9a6d-6b5c7e8a2b3a"],
+        "pages": ["/", "/client-view"]
+      },
+      "user@example.com": {
+        "role": "user",
+        "dashboards": ["5689a7c2-d3e8-4715-8b7e-7c4f8d9a3c2b"],
+        "pages": ["/", "/client-view"]
+      },
+      "Rishi": {
+        "role": "user",
+        "dashboards": [],
+        "pages": ["/client-view"]
+      },
+      "rishi@think.digital": {
+        "role": "user",
+        "dashboards": ["55031771-a67d-4396-a2f4-abd62a0b093b"],
+        "dashboards": ["40280902-1bf6-4f10-917f-c872320408d8"],
+        "pages": ["/", "/client-view"]
+      }
+    }
+  }
