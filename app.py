@@ -61,7 +61,15 @@ COLOR_PALETTES = {
     "pastel": ["#FFD3B5", "#B5DEFF", "#D5C5FC", "#BCDFC9", "#FEBFB3"],
     "corporate": ["#1F77B4", "#FF7F0E", "#2CA02C", "#D62728", "#9467BD"]
 }
+if not os.path.exists("client_dashboards.json"):
+    with open("client_dashboards.json", "w") as f:
+        f.write('{"dashboards": [], "graphs": [], "layouts": []}')
+    print("Created empty client_dashboards.json file")
 
+if not os.path.exists("user_permissions.json"):
+    with open("user_permissions.json", "w") as f:
+        f.write('{"users": {}}')
+    print("Created empty user_permissions.json file")
 # Helper function to create secret hash (from Streamlit version)
 def get_secret_hash(username):
     msg = username + COGNITO_CLIENT_ID
