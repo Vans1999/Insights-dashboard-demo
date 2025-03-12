@@ -3,8 +3,10 @@ runtime: python3
 build:
   commands:
     build:
+      - pip install --upgrade pip
       - pip install -r requirements.txt
 run:
-  command: python app.py
+  command: gunicorn --bind 0.0.0.0:8080 --workers 1 --threads 8 --timeout 0 app:server
   network:
     port: 8080
+    env: PORT
